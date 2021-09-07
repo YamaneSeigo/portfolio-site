@@ -1,0 +1,352 @@
+/*共通*/
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+a:hover {
+    opacity: .7;
+    transition: .3s;
+    text-decoration:none;
+}
+li {
+    list-style: none;
+}
+body {
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    width: 100%;
+}
+
+/*header*/
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    padding:30px;
+}
+.header-box{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.header-logo a{
+    text-align: center;
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+}
+.header-list ul{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.header-list ul li{
+    font-size: 18px;
+    font-family:sans-serif;
+    letter-spacing: 1px;
+}
+.header-list ul li a:hover{
+    color: #ff0000;
+}
+/*main*/
+.main-box{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-logo{
+    text-align: center;
+}
+.main-logo p{
+    display: inline-block;
+    font-size: 40px;
+    font-family: HiraMinPro-W6;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    background: linear-gradient(transparent 80%,#ff0000 80%);
+}
+
+/*first-view*/
+.first-view{
+    position: relative;
+    text-align: right;
+}
+.first-view img{
+    margin-top: 135px;
+    padding-top: 45px;
+    width: 67%;
+    background-position: center;
+    background-size: cover;
+}
+.first-view p{
+    position: absolute;
+    top: 400px;
+    left: 160px;
+    font-size: 40px;
+}
+.first-view p span{
+    color: #ff0000;
+    font-weight:bold;
+}
+
+/*profile*/
+.profile-contents{
+    display: flex;
+    justify-content:start;
+    padding: 40px;
+    background-color:#F6F6F4;
+    color: #606060;
+}
+.profile-left{
+    width: 50%;
+    text-align: center;
+}
+.profile-list ul{
+    padding-top: 40px;
+}
+.profile-list ul li{
+    padding-bottom: 30px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #000;
+}
+.profile-list ul li:last-of-type{
+    font-size: 20px;
+    padding: 0;
+    color:#606060;
+}
+.profile-right{
+    width: 50%;
+}
+.profile-left img{
+    width: 60%;
+    border-radius: 50%;
+}
+.profile-right{
+    padding-left: 50px;
+}
+.profile-right ul{
+    padding-top: 30px;
+}
+.profile-right ul li{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.profile-right ul li span{
+    color: #000;
+}
+
+/*about*/
+.about-contents{
+    background-color:#F6F6F4 ;
+    padding: 40px;
+}
+.about-logo{
+    text-align: center;
+}
+.about-logo p{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+.about-intro{
+    background-color: #fff;
+}
+.about-career{
+    background-color: #fff;
+}
+.about-myself{
+    background-color: #fff;
+}
+.about-portfolio{
+    background-color: #fff;
+}
+.about-text p{
+    padding: 40px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+/*skill*/
+.skill-contents{
+    background-color:#F6F6F4 ;
+    padding-top: 30px;
+    text-align: center;
+}
+.skill-logo{
+    text-align: center;
+}
+.skill-logo p{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+}
+.skill-item img{
+    width: 70%;
+}
+
+/*footer*/
+.footer-logo p{
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F6F6F4;
+}
+
+/*responsive*/
+@media(max-width:520px){
+
+    /*header*/
+    header{
+        padding:10px;
+    }
+    .header-box{
+        width: 80%;
+        padding-top: 5px;
+    }
+    .header-logo a{
+        font-size: 22px;
+        letter-spacing: 6px;
+    }
+    .header-list ul{
+        width: 80%;
+        padding-top: 15px;
+    }
+    .header-list ul li{
+        font-size: 10px;
+    }
+
+    /*first-view*/
+    .first-view{
+        text-align: center;
+    }
+    .first-view img{
+        margin-top: 40px;
+        width: 70%;
+    }
+    .first-view p{
+        top: 100px;
+        left: 20px;
+        font-size: 12px;
+    }
+
+    /*main*/
+    .main-box{
+        padding-top: 10px;
+        width: 85%;
+    }
+    .main-logo p{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    /*profile*/
+    .profile-contents{
+        display:initial;
+        padding: 0;
+        background-color: #fff;
+    }
+    .profile-left{
+        width: 100%;
+        background-color:#F6F6F4 ;
+        padding: 20px;
+    }
+    .profile-list ul{
+        padding-top: 30px;
+    }
+    .profile-list ul li{
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    .profile-right{
+        width: 100%;
+        text-align: center;
+        background-color:#F6F6F4 ;
+    }
+    .profile-left img{
+        width: 60%;
+        border-radius: 50%;
+    }
+    .profile-right{
+        padding:0;
+    }
+    .profile-right ul{
+        padding-top: 10px;
+    }
+    .profile-right ul li{
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    .profile-right ul li span{
+        color: #000;
+    }
+    
+    /*about*/
+    .about-contents{
+        padding: 20px;
+    }
+    .about-logo p{
+        font-size: 20px;
+        font-weight:normal;
+        padding:0;
+    }
+    .about-logo p:first-of-type{
+        padding-top: 20px;
+    }
+    .about-text p{
+        font-size: 10px;
+        padding: 20px;
+        letter-spacing:0;
+        line-height: 20px;
+    }
+
+    /*skill*/
+    .skill-contents{
+        padding-top: 10px;
+    }
+    .skill-logo p{
+        font-size: 20px;
+        font-weight:normal;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .skill-item img{
+        width: 90%;
+    }
+
+    /*footer*/
+    .footer-logo p{
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
